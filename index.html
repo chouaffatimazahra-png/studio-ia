@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>STUDIO·IA — Votre studio photo, sans studio</title>
+  <meta name="description" content="Photos et vidéos publicitaires générées par IA pour la mode, les bijoux et vos produits. Mannequins, studios et locations — sans shooting." />
+  <meta name="theme-color" content="#0c0b0a" />
+  <meta property="og:title" content="STUDIO·IA — Votre studio photo, sans studio" />
+  <meta property="og:description" content="Mannequins réalistes, studios et décors — photos et vidéos publicitaires par IA pour la mode, les bijoux et vos produits. Algérie." />
+  <meta property="og:image" content="assets/hero-frames/shot3-portrait-bijoux.webp" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230c0b0a'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' text-anchor='middle' fill='%23d9b38c'%3ES%3C/text%3E%3Ccircle cx='47' cy='20' r='4' fill='%23d9b38c'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@400;500;600&family=Amiri:ital,wght@0,400;0,700;1,400&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <a href="#top" class="logo" data-brand>STUDIO·IA</a>
+    <nav class="nav-links">
+      <a href="#univers" data-i18n="nav.univers">Univers</a>
+      <a href="#casting" data-i18n="nav.casting">Casting</a>
+      <a href="#locations" data-i18n="nav.locations">Locations</a>
+      <a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a>
+      <a href="#packs" data-i18n="nav.packs">Packs</a>
+    </nav>
+    <div class="nav-right">
+      <div class="lang" id="langSwitch" role="group" aria-label="Langue">
+        <button data-lang="fr">FR</button><button data-lang="en">EN</button><button data-lang="ar">ع</button>
+      </div>
+      <a href="#commande" class="btn btn-small" data-i18n="nav.order">Commander</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="hero-inner">
+      <p class="eyebrow reveal" data-i18n="hero.eyebrow">Production publicitaire par IA · Algérie</p>
+      <h1 class="hero-title reveal">
+        <span data-i18n="hero.sans">Sans</span> <span class="rotator" id="rotator"><span>studio.</span></span><br />
+        <em data-i18n="hero.tagline">Juste des images qui vendent.</em>
+      </h1>
+      <p class="hero-sub reveal" data-i18n="hero.sub">
+        Mannequins réalistes, studios et décors du monde entier — pour vos vêtements, bijoux et produits.
+        Vous envoyez le produit en photo, on livre la campagne.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#casting" class="btn" data-i18n="hero.cta1">Choisir un mannequin →</a>
+        <a href="#packs" class="btn btn-ghost" data-i18n="hero.cta2">Voir les packs</a>
+      </div>
+    </div>
+    <div class="marquee" aria-hidden="true"><div class="marquee-track" id="marquee"></div></div>
+  </section>
+
+  <!-- PROBLÈME → SOLUTION -->
+  <section class="section equation">
+    <div class="eq reveal">
+      <span class="eq-item" data-i18n="eq.studio">Studio</span><span class="eq-op">+</span>
+      <span class="eq-item" data-i18n="eq.photographer">Photographe</span><span class="eq-op">+</span>
+      <span class="eq-item" data-i18n="eq.model">Mannequin</span><span class="eq-op">=</span>
+      <span class="eq-item eq-strike" data-i18n="eq.result">Des semaines & un gros budget</span>
+    </div>
+    <p class="eq-answer reveal" data-i18n-html="eq.answer">Ici, tout est réuni <em>au même endroit</em>.</p>
+  </section>
+
+  <!-- UNIVERS -->
+  <section class="section" id="univers">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-i18n="univers.eyebrow">01 — Univers</p>
+      <h2 data-i18n="univers.title">Choisissez votre domaine</h2>
+    </div>
+    <div class="univers">
+      <a href="#casting" class="u-card reveal">
+        <img class="u-obj" src="assets/univers/obj-trad.png" alt="" loading="lazy">
+        <span class="u-num">01</span>
+        <h3 data-i18n="u.trad.t">Mode traditionnelle</h3>
+        <p data-i18n="u.trad.d">Karakou, caftan, chedda, kabyle… portés par le mannequin de votre choix.</p>
+        <span class="u-arrow">→</span>
+      </a>
+      <a href="#casting" class="u-card reveal">
+        <img class="u-obj" src="assets/univers/obj-moderne.png" alt="" loading="lazy">
+        <span class="u-num">02</span>
+        <h3 data-i18n="u.mod.t">Mode moderne</h3>
+        <p data-i18n="u.mod.d">Prêt-à-porter, streetwear, chaussures et sacs.</p>
+        <span class="u-arrow">→</span>
+      </a>
+      <a href="#portfolio" class="u-card reveal">
+        <img class="u-obj" src="assets/univers/obj-bijoux.png" alt="" loading="lazy">
+        <span class="u-num">03</span>
+        <h3 data-i18n="u.bij.t">Bijoux</h3>
+        <p data-i18n="u.bij.d">Bagues, colliers, parures. Gros plans et mises en scène luxe.</p>
+        <span class="u-arrow">→</span>
+      </a>
+      <a href="#produits" class="u-card reveal">
+        <img class="u-obj" src="assets/univers/obj-produit.png" alt="" loading="lazy">
+        <span class="u-num">04</span>
+        <h3 data-i18n="u.prod.t">Produits</h3>
+        <p data-i18n="u.prod.d">Cosmétiques, parfums, déco. Vidéo scénarisée ou pub classique.</p>
+        <span class="u-arrow">→</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- CASTING -->
+  <section class="section" id="casting">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-i18n="casting.eyebrow">02 — Casting</p>
+      <h2 data-i18n="casting.title">Choisissez votre mannequin</h2>
+      <p class="lead" data-i18n="casting.lead">Toutes les morphologies, du XS au XXL. Cliquez pour sélectionner.</p>
+    </div>
+    <div class="filters reveal">
+      <div class="chips" id="catFilter"></div>
+      <div class="chips chips-sm" id="sizeFilter"></div>
+    </div>
+    <div class="row-wrap">
+      <button class="row-nav prev" data-row="modelsGrid" aria-label="Précédent">‹</button>
+      <div class="models row" id="modelsGrid"></div>
+      <button class="row-nav next" data-row="modelsGrid" aria-label="Suivant">›</button>
+    </div>
+    <p class="row-hint" data-i18n="casting.swipe">Glissez pour voir plus →</p>
+  </section>
+
+  <!-- LOCATIONS -->
+  <section class="section" id="locations">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-i18n="loc.eyebrow">03 — Locations</p>
+      <h2 data-i18n="loc.title">Où voulez-vous shooter ?</h2>
+      <p class="lead" data-i18n="loc.lead">Studios épurés ou décors réels — d'Alger au Sahara.</p>
+    </div>
+    <div class="filters reveal"><div class="chips" id="locFilter"></div></div>
+    <div class="row-wrap">
+      <button class="row-nav prev" data-row="locsGrid" aria-label="Précédent">‹</button>
+      <div class="locs row row2" id="locsGrid"></div>
+      <button class="row-nav next" data-row="locsGrid" aria-label="Suivant">›</button>
+    </div>
+    <p class="row-hint" data-i18n="casting.swipe">Glissez pour voir plus →</p>
+  </section>
+
+  <!-- PRODUITS -->
+  <section class="section" id="produits">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-i18n="formats.eyebrow">04 — Format</p>
+      <h2 data-i18n="formats.title">Quel type de contenu ?</h2>
+    </div>
+    <div class="formats" id="formats">
+      <button class="f-card reveal" data-format="photos">
+        <h3 data-i18n="f.photos.t">Photos</h3><p data-i18n="f.photos.d">Fiches produit, catalogue, posts Instagram.</p>
+      </button>
+      <button class="f-card reveal" data-format="pub">
+        <h3 data-i18n="f.pub.t">Pub classique</h3><p data-i18n="f.pub.d">Vidéo courte 10–30s, produit mis en valeur, musique.</p>
+      </button>
+      <button class="f-card reveal" data-format="scenario">
+        <h3 data-i18n="f.scen.t">Vidéo scénario</h3><p data-i18n="f.scen.d">Une mini-histoire autour de votre produit. Idéal TikTok & Reels.</p>
+      </button>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="section" id="portfolio">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-i18n="portfolio.eyebrow">05 — Portfolio</p>
+      <h2 data-i18n="portfolio.title">Nos réalisations</h2>
+    </div>
+    <div class="filters"><div class="chips" id="portFilter" hidden></div></div>
+    <div class="grid port" id="portGrid"></div>
+  </section>
+
+  <!-- COMMENT ÇA MARCHE -->
+  <section class="section steps-wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-i18n="steps.eyebrow">06 — Process</p>
+      <h2 data-i18n="steps.title">Comment ça marche</h2>
+    </div>
+    <ol class="steps">
+      <li class="reveal"><span>1</span><h4 data-i18n="s1.t">Vous choisissez</h4><p data-i18n="s1.d">Mannequin, location et format.</p></li>
+      <li class="reveal"><span>2</span><h4 data-i18n="s2.t">Vous envoyez</h4><p data-i18n="s2.d">Des photos simples de votre produit (même au téléphone).</p></li>
+      <li class="reveal"><span>3</span><h4 data-i18n="s3.t">On crée</h4><p data-i18n="s3.d">Notre studio IA génère vos visuels.</p></li>
+      <li class="reveal"><span>4</span><h4 data-i18n="s4.t">Vous publiez</h4><p data-i18n="s4.d">Livraison HD, prête pour vos réseaux et votre boutique.</p></li>
+    </ol>
+  </section>
+
+  <!-- PACKS -->
+  <section class="section" id="packs">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-i18n="packs.eyebrow">07 — Packs</p>
+      <h2 data-i18n="packs.title">Du test à la campagne complète</h2>
+    </div>
+    <div class="packs" id="packsGrid"></div>
+  </section>
+
+  <!-- COMMANDE -->
+  <section class="section" id="commande">
+    <div class="order reveal">
+      <div>
+        <p class="eyebrow" data-i18n="order.eyebrow">Votre sélection</p>
+        <h2 data-i18n="order.title">Prêt·e à lancer votre campagne ?</h2>
+        <ul class="summary" id="summary"></ul>
+      </div>
+      <div class="order-cta">
+        <a class="btn btn-wa" id="waBtn" target="_blank" rel="noopener" data-i18n="order.wa">Commander sur WhatsApp</a>
+        <a class="btn btn-ghost" id="mailBtn" data-i18n="order.mail">Ou par e-mail</a>
+        <p class="order-terms"><span data-i18n="order.terms">En commandant, vous acceptez nos</span> <button type="button" class="foot-link" data-open-terms data-i18n="footer.terms">Conditions générales</button></p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="foot-brand">
+      <span data-brand>STUDIO·IA</span>
+      <span class="foot-owner" id="footOwner" hidden></span>
+    </div>
+    <nav class="foot-social" id="footSocial" aria-label="Réseaux sociaux"></nav>
+    <div class="foot-legal">
+      <button type="button" class="foot-link" id="termsOpen" data-i18n="footer.terms">Conditions générales</button>
+      <span>© <span id="year"></span> — <span data-i18n="footer.tag">Production publicitaire par intelligence artificielle · Certaines photos de lieux : Unsplash</span></span>
+    </div>
+  </footer>
+
+  <!-- Mannequin en grand (3D) -->
+  <div class="zoom" id="zoom" hidden role="dialog" aria-modal="true">
+    <div class="zoom-box">
+      <button type="button" class="terms-x" id="zoomClose" aria-label="Fermer">✕</button>
+      <div class="zoom-body" id="zoomBody"></div>
+    </div>
+  </div>
+
+  <!-- Conditions générales (fenêtre) -->
+  <div class="terms" id="terms" hidden role="dialog" aria-modal="true" aria-labelledby="termsTitle">
+    <div class="terms-box">
+      <button type="button" class="terms-x" id="termsClose" aria-label="Fermer">✕</button>
+      <div id="termsBody"></div>
+    </div>
+  </div>
+
+  <!-- Barre de sélection flottante -->
+  <div class="tray" id="tray">
+    <span id="trayText">0 sélection</span>
+    <a href="#commande" class="btn btn-small" data-i18n="tray.go">Finaliser →</a>
+  </div>
+
+  <!-- données modifiées depuis la lettre de contrôle (null = valeurs de data.js) -->
+  <script id="site-data" type="application/json">null</script>
+  <script src="data.js"></script>
+  <script src="i18n.js"></script>
+  <script src="terms.js"></script>
+  <script src="app.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

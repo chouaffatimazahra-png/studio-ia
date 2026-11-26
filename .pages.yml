@@ -1,0 +1,101 @@
+# Lettre de contrôle (Pages CMS) — https://app.pagescms.org
+# Toutes les données du site sont dans content/site.json
+media:
+  input: assets/uploads
+  output: assets/uploads
+
+content:
+  - name: site
+    label: "⚙️ Mon site (STUDIO·IA)"
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: site
+        label: "👤 Nom, contact et réseaux"
+        type: object
+        fields:
+          - { name: owner, label: "Nom complet (bas du site)", type: string }
+          - { name: whatsapp, label: "WhatsApp (sans +, ex : 213667526459)", type: string }
+          - { name: email, label: "E-mail (le bouton apparaît s'il est rempli)", type: string }
+          - { name: currency, label: "Monnaie", type: string }
+          - name: social
+            label: "Réseaux sociaux (liens complets https://…)"
+            type: object
+            fields:
+              - { name: instagram, label: Instagram, type: string }
+              - { name: tiktok, label: TikTok, type: string }
+              - { name: facebook, label: Facebook, type: string }
+              - { name: linkedin, label: LinkedIn, type: string }
+              - { name: higgsfield, label: Higgsfield, type: string }
+
+      - name: packs
+        label: "💰 Prix des packs (vide ou — = Sur devis)"
+        type: object
+        list: true
+        fields:
+          - { name: id, label: "Code (ne pas changer)", type: string }
+          - { name: name, label: Nom, type: string }
+          - { name: price, label: Prix, type: string }
+
+      - name: models
+        label: "🧍 Mannequins"
+        type: object
+        list: true
+        fields:
+          - { name: name, label: Nom, type: string }
+          - name: cat
+            label: Catégorie
+            type: select
+            options:
+              values: [femmes, hommes, bebes, enfants, seniors]
+          - name: size
+            label: Taille
+            type: select
+            options:
+              values: [XS, S, M, L, XL, XXL]
+          - { name: hidden, label: "Cacher du site", type: boolean }
+          - { name: img, label: "Photo (une seule vue)", type: image }
+          - { name: sheet, label: "Planche 3D (plusieurs vues côte à côte)", type: image }
+          - { name: frames, label: "Nombre de vues sur la planche (1 à 4)", type: number }
+          - { name: face, label: "Visage (médaillon)", type: image }
+          - { name: hero, label: "Montrer aussi dans la bande du haut", type: boolean }
+          - { name: id, label: "Code (laisser tel quel, ou un mot unique pour un nouveau)", type: string }
+
+      - name: locations
+        label: "📍 Lieux / studios"
+        type: object
+        list: true
+        fields:
+          - { name: name, label: Nom, type: string }
+          - name: type
+            label: Type
+            type: select
+            options:
+              values: [studio, interieur, produit, exterieur]
+          - { name: hidden, label: "Cacher du site", type: boolean }
+          - { name: img, label: Photo, type: image }
+          - { name: video, label: "Vidéo (mp4)", type: file }
+          - { name: id, label: "Code (unique)", type: string }
+
+      - name: portfolio
+        label: "🖼️ Portfolio"
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Titre, type: string }
+          - { name: tag, label: "Catégorie (ex : Bijoux, Mode · Traditionnel)", type: string }
+          - name: quality
+            label: Qualité
+            type: select
+            options:
+              values: [standard, pro, ultra]
+          - { name: hidden, label: "Cacher du site", type: boolean }
+          - { name: img, label: Photo, type: image }
+          - { name: video, label: "Vidéo (mp4)", type: file }
+
+      - name: portfolioView
+        label: "🗂️ Affichage du portfolio"
+        type: select
+        options:
+          values: [all, category, quality, type]

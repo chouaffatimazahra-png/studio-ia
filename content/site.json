@@ -1,0 +1,1175 @@
+{
+  "site": {
+    "whatsapp": "213667526459",
+    "email": "contact@exemple.com",
+    "currency": "DA",
+    "owner": "chouaf Fatima zahra",
+    "social": {
+      "instagram": "",
+      "tiktok": "",
+      "facebook": "",
+      "linkedin": "",
+      "higgsfield": ""
+    }
+  },
+  "packs": [
+    {
+      "id": "sample",
+      "name": "Sample",
+      "price": "—"
+    },
+    {
+      "id": "standard",
+      "name": "Standard",
+      "price": "—"
+    },
+    {
+      "id": "pro",
+      "name": "Pro",
+      "price": "—"
+    },
+    {
+      "id": "ultra",
+      "name": "Ultra",
+      "price": "—"
+    }
+  ],
+  "models": [
+    {
+      "id": "o07",
+      "name": "Rania",
+      "cat": "femmes",
+      "size": "XS",
+      "sheet": "assets/models/final/o07.png",
+      "face": "assets/models/final/faces/o07.jpg",
+      "frames": 4
+    },
+    {
+      "id": "n02",
+      "name": "Lilia",
+      "cat": "femmes",
+      "size": "XS",
+      "sheet": "assets/models/final/n02.png",
+      "face": "assets/models/final/faces/n02.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "o03",
+      "name": "Lina",
+      "cat": "femmes",
+      "size": "S",
+      "sheet": "assets/models/final/o03.png",
+      "face": "assets/models/final/faces/o03.jpg",
+      "frames": 4
+    },
+    {
+      "id": "o21",
+      "name": "Yasmine",
+      "cat": "femmes",
+      "size": "S",
+      "sheet": "assets/models/final/o21.png",
+      "face": "assets/models/final/faces/o21.jpg",
+      "frames": 4
+    },
+    {
+      "id": "o23",
+      "name": "Imane",
+      "cat": "femmes",
+      "size": "S",
+      "sheet": "assets/models/final/o23.png",
+      "face": "assets/models/final/faces/o23.jpg",
+      "frames": 4
+    },
+    {
+      "id": "o04",
+      "name": "Kenza",
+      "cat": "femmes",
+      "size": "S",
+      "sheet": "assets/models/final/o04.png",
+      "face": "assets/models/final/faces/o04.jpg",
+      "frames": 4
+    },
+    {
+      "id": "n01",
+      "name": "Amina",
+      "cat": "femmes",
+      "size": "S",
+      "sheet": "assets/models/final/n01.png",
+      "face": "assets/models/final/faces/n01.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "n05",
+      "name": "Asma",
+      "cat": "femmes",
+      "size": "S",
+      "sheet": "assets/models/final/n05.png",
+      "face": "assets/models/final/faces/n05.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "n53",
+      "name": "Feriel",
+      "cat": "femmes",
+      "size": "S",
+      "sheet": "assets/models/final/n53.png",
+      "face": "assets/models/final/faces/n53.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "n54",
+      "name": "Ikram",
+      "cat": "femmes",
+      "size": "S",
+      "sheet": "assets/models/final/n54.png",
+      "face": "assets/models/final/faces/n54.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "n59",
+      "name": "Nesrine",
+      "cat": "femmes",
+      "size": "S",
+      "sheet": "assets/models/final/n59.png",
+      "face": "assets/models/final/faces/n59.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "o22",
+      "name": "Meriem",
+      "cat": "femmes",
+      "size": "M",
+      "sheet": "assets/models/final/o22.png",
+      "face": "assets/models/final/faces/o22.jpg",
+      "frames": 4
+    },
+    {
+      "id": "o24",
+      "name": "Selma",
+      "cat": "femmes",
+      "size": "M",
+      "sheet": "assets/models/final/o24.png",
+      "face": "assets/models/final/faces/o24.jpg",
+      "frames": 4
+    },
+    {
+      "id": "o05",
+      "name": "Sarah",
+      "cat": "femmes",
+      "size": "M",
+      "sheet": "assets/models/final/o05.png",
+      "face": "assets/models/final/faces/o05.jpg",
+      "frames": 4
+    },
+    {
+      "id": "n07",
+      "name": "Sabrina",
+      "cat": "femmes",
+      "size": "M",
+      "sheet": "assets/models/final/n07.png",
+      "face": "assets/models/final/faces/n07.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "n44",
+      "name": "Chahrazed",
+      "cat": "femmes",
+      "size": "M",
+      "sheet": "assets/models/final/n44.png",
+      "face": "assets/models/final/faces/n44.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "n47",
+      "name": "Houda",
+      "cat": "femmes",
+      "size": "M",
+      "sheet": "assets/models/final/n47.png",
+      "face": "assets/models/final/faces/n47.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "n55",
+      "name": "Leila",
+      "cat": "femmes",
+      "size": "M",
+      "sheet": "assets/models/final/n55.png",
+      "face": "assets/models/final/faces/n55.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "o06",
+      "name": "Amel",
+      "cat": "femmes",
+      "size": "L",
+      "sheet": "assets/models/final/o06.png",
+      "face": "assets/models/final/faces/o06.jpg",
+      "frames": 4
+    },
+    {
+      "id": "n03",
+      "name": "Hania",
+      "cat": "femmes",
+      "size": "L",
+      "sheet": "assets/models/final/n03.png",
+      "face": "assets/models/final/faces/n03.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "n48",
+      "name": "Wafa",
+      "cat": "femmes",
+      "size": "L",
+      "sheet": "assets/models/final/n48.png",
+      "face": "assets/models/final/faces/n48.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "n49",
+      "name": "Assia",
+      "cat": "femmes",
+      "size": "L",
+      "sheet": "assets/models/final/n49.png",
+      "face": "assets/models/final/faces/n49.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "n50",
+      "name": "Siham",
+      "cat": "femmes",
+      "size": "L",
+      "sheet": "assets/models/final/n50.png",
+      "face": "assets/models/final/faces/n50.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "n51",
+      "name": "Naima",
+      "cat": "femmes",
+      "size": "L",
+      "sheet": "assets/models/final/n51.png",
+      "face": "assets/models/final/faces/n51.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "n56",
+      "name": "Zineb",
+      "cat": "femmes",
+      "size": "L",
+      "sheet": "assets/models/final/n56.png",
+      "face": "assets/models/final/faces/n56.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "n57",
+      "name": "Khadidja",
+      "cat": "femmes",
+      "size": "L",
+      "sheet": "assets/models/final/n57.png",
+      "face": "assets/models/final/faces/n57.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "n58",
+      "name": "Manel",
+      "cat": "femmes",
+      "size": "L",
+      "sheet": "assets/models/final/n58.png",
+      "face": "assets/models/final/faces/n58.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "o02",
+      "name": "Nadia",
+      "cat": "femmes",
+      "size": "XL",
+      "sheet": "assets/models/final/o02.png",
+      "face": "assets/models/final/faces/o02.jpg",
+      "frames": 4
+    },
+    {
+      "id": "n45",
+      "name": "Djamila",
+      "cat": "femmes",
+      "size": "XL",
+      "sheet": "assets/models/final/n45.png",
+      "face": "assets/models/final/faces/n45.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "n46",
+      "name": "Souad",
+      "cat": "femmes",
+      "size": "XL",
+      "sheet": "assets/models/final/n46.png",
+      "face": "assets/models/final/faces/n46.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "n52",
+      "name": "Malika",
+      "cat": "femmes",
+      "size": "XL",
+      "sheet": "assets/models/final/n52.png",
+      "face": "assets/models/final/faces/n52.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "n62",
+      "name": "Lamia",
+      "cat": "femmes",
+      "size": "XL",
+      "sheet": "assets/models/final/n62.png",
+      "face": "assets/models/final/faces/n62.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "o01",
+      "name": "Samira",
+      "cat": "femmes",
+      "size": "XXL",
+      "sheet": "assets/models/final/o01.png",
+      "face": "assets/models/final/faces/o01.jpg",
+      "frames": 4
+    },
+    {
+      "id": "o08",
+      "name": "Rayan",
+      "cat": "hommes",
+      "size": "S",
+      "sheet": "assets/models/final/o08.png",
+      "face": "assets/models/final/faces/o08.jpg",
+      "frames": 4
+    },
+    {
+      "id": "n18",
+      "name": "Mehdi",
+      "cat": "hommes",
+      "size": "S",
+      "sheet": "assets/models/final/n18.png",
+      "face": "assets/models/final/faces/n18.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "n20",
+      "name": "Bilal",
+      "cat": "hommes",
+      "size": "S",
+      "sheet": "assets/models/final/n20.png",
+      "face": "assets/models/final/faces/n20.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "n22",
+      "name": "Hamza",
+      "cat": "hommes",
+      "size": "S",
+      "sheet": "assets/models/final/n22.png",
+      "face": "assets/models/final/faces/n22.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "o10",
+      "name": "Adam",
+      "cat": "hommes",
+      "size": "M",
+      "sheet": "assets/models/final/o10.png",
+      "face": "assets/models/final/faces/o10.jpg",
+      "frames": 4
+    },
+    {
+      "id": "n09",
+      "name": "Sofiane",
+      "cat": "hommes",
+      "size": "M",
+      "sheet": "assets/models/final/n09.png",
+      "face": "assets/models/final/faces/n09.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "n16",
+      "name": "Nassim",
+      "cat": "hommes",
+      "size": "M",
+      "sheet": "assets/models/final/n16.png",
+      "face": "assets/models/final/faces/n16.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "n17",
+      "name": "Amine",
+      "cat": "hommes",
+      "size": "M",
+      "sheet": "assets/models/final/n17.png",
+      "face": "assets/models/final/faces/n17.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "n21",
+      "name": "Riad",
+      "cat": "hommes",
+      "size": "M",
+      "sheet": "assets/models/final/n21.png",
+      "face": "assets/models/final/faces/n21.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "n25",
+      "name": "Farid",
+      "cat": "hommes",
+      "size": "M",
+      "sheet": "assets/models/final/n25.png",
+      "face": "assets/models/final/faces/n25.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "o09",
+      "name": "Karim",
+      "cat": "hommes",
+      "size": "L",
+      "sheet": "assets/models/final/o09.png",
+      "face": "assets/models/final/faces/o09.jpg",
+      "frames": 4
+    },
+    {
+      "id": "n10",
+      "name": "Walid",
+      "cat": "hommes",
+      "size": "L",
+      "sheet": "assets/models/final/n10.png",
+      "face": "assets/models/final/faces/n10.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "n11",
+      "name": "Mourad",
+      "cat": "hommes",
+      "size": "L",
+      "sheet": "assets/models/final/n11.png",
+      "face": "assets/models/final/faces/n11.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "n12",
+      "name": "Samir",
+      "cat": "hommes",
+      "size": "L",
+      "sheet": "assets/models/final/n12.png",
+      "face": "assets/models/final/faces/n12.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "n23",
+      "name": "Hichem",
+      "cat": "hommes",
+      "size": "L",
+      "sheet": "assets/models/final/n23.png",
+      "face": "assets/models/final/faces/n23.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "n24",
+      "name": "Lotfi",
+      "cat": "hommes",
+      "size": "L",
+      "sheet": "assets/models/final/n24.png",
+      "face": "assets/models/final/faces/n24.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "n13",
+      "name": "Redouane",
+      "cat": "hommes",
+      "size": "XL",
+      "sheet": "assets/models/final/n13.png",
+      "face": "assets/models/final/faces/n13.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "n19",
+      "name": "Toufik",
+      "cat": "hommes",
+      "size": "XL",
+      "sheet": "assets/models/final/n19.png",
+      "face": "assets/models/final/faces/n19.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "n14",
+      "name": "Nabil",
+      "cat": "hommes",
+      "size": "XXL",
+      "sheet": "assets/models/final/n14.png",
+      "face": "assets/models/final/faces/n14.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "n15",
+      "name": "Djamel",
+      "cat": "hommes",
+      "size": "XXL",
+      "sheet": "assets/models/final/n15.png",
+      "face": "assets/models/final/faces/n15.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "o19",
+      "name": "Yanis",
+      "cat": "bebes",
+      "size": "XS",
+      "sheet": "assets/models/final/o19.png",
+      "face": "assets/models/final/faces/o19.jpg",
+      "frames": 4
+    },
+    {
+      "id": "n42",
+      "name": "Amira",
+      "cat": "bebes",
+      "size": "XS",
+      "sheet": "assets/models/final/n42.png",
+      "face": "assets/models/final/faces/n42.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "o20",
+      "name": "Wassim",
+      "cat": "bebes",
+      "size": "S",
+      "sheet": "assets/models/final/o20.png",
+      "face": "assets/models/final/faces/o20.jpg",
+      "frames": 4
+    },
+    {
+      "id": "n43",
+      "name": "Taha",
+      "cat": "bebes",
+      "size": "S",
+      "sheet": "assets/models/final/n43.png",
+      "face": "assets/models/final/faces/n43.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "o12",
+      "name": "Nour",
+      "cat": "enfants",
+      "size": "XS",
+      "sheet": "assets/models/final/o12.png",
+      "face": "assets/models/final/faces/o12.jpg",
+      "frames": 4
+    },
+    {
+      "id": "o14",
+      "name": "Anis",
+      "cat": "enfants",
+      "size": "XS",
+      "sheet": "assets/models/final/o14.png",
+      "face": "assets/models/final/faces/o14.jpg",
+      "frames": 4
+    },
+    {
+      "id": "n26",
+      "name": "Malak",
+      "cat": "enfants",
+      "size": "XS",
+      "sheet": "assets/models/final/n26.png",
+      "face": "assets/models/final/faces/n26.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "n28",
+      "name": "Hiba",
+      "cat": "enfants",
+      "size": "XS",
+      "sheet": "assets/models/final/n28.png",
+      "face": "assets/models/final/faces/n28.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "n30",
+      "name": "Aya",
+      "cat": "enfants",
+      "size": "XS",
+      "sheet": "assets/models/final/n30.png",
+      "face": "assets/models/final/faces/n30.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "n31",
+      "name": "Ritaj",
+      "cat": "enfants",
+      "size": "XS",
+      "sheet": "assets/models/final/n31.png",
+      "face": "assets/models/final/faces/n31.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "n37",
+      "name": "Iyad",
+      "cat": "enfants",
+      "size": "XS",
+      "sheet": "assets/models/final/n37.png",
+      "face": "assets/models/final/faces/n37.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "n38",
+      "name": "Adem",
+      "cat": "enfants",
+      "size": "XS",
+      "sheet": "assets/models/final/n38.png",
+      "face": "assets/models/final/faces/n38.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "o11",
+      "name": "Maya",
+      "cat": "enfants",
+      "size": "S",
+      "sheet": "assets/models/final/o11.png",
+      "face": "assets/models/final/faces/o11.jpg",
+      "frames": 4
+    },
+    {
+      "id": "o16",
+      "name": "Lyna",
+      "cat": "enfants",
+      "size": "S",
+      "sheet": "assets/models/final/o16.png",
+      "face": "assets/models/final/faces/o16.jpg",
+      "frames": 4
+    },
+    {
+      "id": "o15",
+      "name": "Yacine",
+      "cat": "enfants",
+      "size": "S",
+      "sheet": "assets/models/final/o15.png",
+      "face": "assets/models/final/faces/o15.jpg",
+      "frames": 4
+    },
+    {
+      "id": "n32",
+      "name": "Lamis",
+      "cat": "enfants",
+      "size": "S",
+      "sheet": "assets/models/final/n32.png",
+      "face": "assets/models/final/faces/n32.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "n33",
+      "name": "Nihad",
+      "cat": "enfants",
+      "size": "S",
+      "sheet": "assets/models/final/n33.png",
+      "face": "assets/models/final/faces/n33.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "n35",
+      "name": "Ayoub",
+      "cat": "enfants",
+      "size": "S",
+      "sheet": "assets/models/final/n35.png",
+      "face": "assets/models/final/faces/n35.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "n36",
+      "name": "Islem",
+      "cat": "enfants",
+      "size": "S",
+      "sheet": "assets/models/final/n36.png",
+      "face": "assets/models/final/faces/n36.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "n41",
+      "name": "Younes",
+      "cat": "enfants",
+      "size": "S",
+      "sheet": "assets/models/final/n41.png",
+      "face": "assets/models/final/faces/n41.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "o13",
+      "name": "Ilyes",
+      "cat": "enfants",
+      "size": "M",
+      "sheet": "assets/models/final/o13.png",
+      "face": "assets/models/final/faces/o13.jpg",
+      "frames": 4
+    },
+    {
+      "id": "n27",
+      "name": "Assil",
+      "cat": "enfants",
+      "size": "M",
+      "sheet": "assets/models/final/n27.png",
+      "face": "assets/models/final/faces/n27.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "n34",
+      "name": "Ghada",
+      "cat": "enfants",
+      "size": "M",
+      "sheet": "assets/models/final/n34.png",
+      "face": "assets/models/final/faces/n34.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "n39",
+      "name": "Haithem",
+      "cat": "enfants",
+      "size": "M",
+      "sheet": "assets/models/final/n39.png",
+      "face": "assets/models/final/faces/n39.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "n40",
+      "name": "Akram",
+      "cat": "enfants",
+      "size": "M",
+      "sheet": "assets/models/final/n40.png",
+      "face": "assets/models/final/faces/n40.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "n29",
+      "name": "Rahaf",
+      "cat": "enfants",
+      "size": "L",
+      "sheet": "assets/models/final/n29.png",
+      "face": "assets/models/final/faces/n29.jpg",
+      "frames": 2,
+      "hero": false
+    },
+    {
+      "id": "o17",
+      "name": "Fatiha",
+      "cat": "seniors",
+      "size": "M",
+      "sheet": "assets/models/final/o17.png",
+      "face": "assets/models/final/faces/o17.jpg",
+      "frames": 4
+    },
+    {
+      "id": "o18",
+      "name": "Rachid",
+      "cat": "seniors",
+      "size": "L",
+      "sheet": "assets/models/final/o18.png",
+      "face": "assets/models/final/faces/o18.jpg",
+      "frames": 4
+    }
+  ],
+  "locations": [
+    {
+      "id": "l01",
+      "name": "Studio blanc lumineux",
+      "type": "studio",
+      "img": "assets/locations/loc-01.jpg"
+    },
+    {
+      "id": "l64",
+      "name": "Studio blanc · arche",
+      "type": "studio",
+      "img": "assets/locations/studio-blanc.jpg"
+    },
+    {
+      "id": "l02",
+      "name": "Studio crème",
+      "type": "studio",
+      "img": "assets/locations/loc-02.jpg"
+    },
+    {
+      "id": "l03",
+      "name": "Fond papier beige",
+      "type": "studio",
+      "img": "assets/locations/loc-03.jpg"
+    },
+    {
+      "id": "l04",
+      "name": "Studio gris anthracite",
+      "type": "studio",
+      "img": "assets/locations/loc-04.jpg"
+    },
+    {
+      "id": "l05",
+      "name": "Studio noir",
+      "type": "studio",
+      "img": "assets/locations/loc-05.jpg"
+    },
+    {
+      "id": "l06",
+      "name": "Fond vert (tous décors)",
+      "type": "studio",
+      "img": "assets/locations/loc-06.jpg"
+    },
+    {
+      "id": "l07",
+      "name": "Loft lumière du jour",
+      "type": "studio",
+      "img": "assets/locations/loc-07.jpg"
+    },
+    {
+      "id": "l13",
+      "name": "Atelier · table en bois",
+      "type": "studio",
+      "img": "assets/locations/loc-13.jpg"
+    },
+    {
+      "id": "l19",
+      "name": "Loft · miroir arche",
+      "type": "studio",
+      "img": "assets/locations/loc-19.jpg"
+    },
+    {
+      "id": "l20",
+      "name": "Loft · miroir noir",
+      "type": "studio",
+      "img": "assets/locations/loc-20.jpg"
+    },
+    {
+      "id": "l14",
+      "name": "Riad blanc · tapis berbère",
+      "type": "interieur",
+      "img": "assets/locations/loc-14.jpg"
+    },
+    {
+      "id": "l15",
+      "name": "Riad · zellige",
+      "type": "interieur",
+      "img": "assets/locations/loc-15.jpg"
+    },
+    {
+      "id": "l16",
+      "name": "Arcades · tapis rouge",
+      "type": "interieur",
+      "img": "assets/locations/loc-16.jpg"
+    },
+    {
+      "id": "l17",
+      "name": "Alcôve mauresque",
+      "type": "interieur",
+      "img": "assets/locations/loc-17.jpg"
+    },
+    {
+      "id": "l18",
+      "name": "Salon bohème",
+      "type": "interieur",
+      "img": "assets/locations/loc-18.jpg"
+    },
+    {
+      "id": "l21",
+      "name": "Appartement haussmannien",
+      "type": "interieur",
+      "img": "assets/locations/loc-21.jpg"
+    },
+    {
+      "id": "l22",
+      "name": "Salon noir & or",
+      "type": "interieur",
+      "img": "assets/locations/loc-22.jpg"
+    },
+    {
+      "id": "l23",
+      "name": "Arcades terracotta",
+      "type": "interieur",
+      "img": "assets/locations/loc-23.jpg"
+    },
+    {
+      "id": "l24",
+      "name": "Patio zellige",
+      "type": "interieur",
+      "img": "assets/locations/loc-24.jpg"
+    },
+    {
+      "id": "l32",
+      "name": "Escalier d'immeuble ancien",
+      "type": "interieur",
+      "img": "assets/locations/loc-32.jpg"
+    },
+    {
+      "id": "l08",
+      "name": "Podium beige",
+      "type": "produit",
+      "img": "assets/locations/loc-08.jpg"
+    },
+    {
+      "id": "l09",
+      "name": "Podium courbe",
+      "type": "produit",
+      "img": "assets/locations/loc-09.jpg"
+    },
+    {
+      "id": "l10",
+      "name": "Marbre noir · spot",
+      "type": "produit",
+      "img": "assets/locations/loc-10.jpg"
+    },
+    {
+      "id": "l11",
+      "name": "Marbre noir · fumée",
+      "type": "produit",
+      "img": "assets/locations/loc-11.jpg"
+    },
+    {
+      "id": "l12",
+      "name": "Marbre noir · mise en scène",
+      "type": "produit",
+      "img": "assets/locations/loc-12.jpg"
+    },
+    {
+      "id": "l25",
+      "name": "Ruelle méditerranéenne",
+      "type": "exterieur",
+      "img": "assets/locations/loc-25.jpg"
+    },
+    {
+      "id": "l26",
+      "name": "Escaliers de la médina",
+      "type": "exterieur",
+      "img": "assets/locations/loc-26.jpg"
+    },
+    {
+      "id": "l27",
+      "name": "Rue parisienne",
+      "type": "exterieur",
+      "img": "assets/locations/loc-27.jpg"
+    },
+    {
+      "id": "l28",
+      "name": "Front de mer · palmiers",
+      "type": "exterieur",
+      "img": "assets/locations/loc-28.jpg"
+    },
+    {
+      "id": "l29",
+      "name": "Dunes du Sahara",
+      "type": "exterieur",
+      "img": "assets/locations/loc-29.jpg"
+    },
+    {
+      "id": "l30",
+      "name": "Terrasse de café",
+      "type": "exterieur",
+      "img": "assets/locations/loc-30.jpg"
+    },
+    {
+      "id": "l31",
+      "name": "Souk des cuivres",
+      "type": "exterieur",
+      "img": "assets/locations/loc-31.jpg"
+    },
+    {
+      "id": "l33",
+      "name": "Jardin tropical",
+      "type": "exterieur",
+      "img": "assets/locations/loc-33.jpg"
+    },
+    {
+      "id": "s01",
+      "name": "Casbah d'Alger",
+      "type": "exterieur",
+      "img": "assets/locations/real-s01.jpg"
+    },
+    {
+      "id": "s02",
+      "name": "Mansourah · Tlemcen",
+      "type": "exterieur",
+      "img": "assets/locations/real-s02.jpg"
+    },
+    {
+      "id": "s05",
+      "name": "Ponts de Constantine",
+      "type": "exterieur",
+      "img": "assets/locations/real-s05.jpg"
+    },
+    {
+      "id": "s06",
+      "name": "Ghardaïa · M'zab",
+      "type": "exterieur",
+      "img": "assets/locations/real-s06.jpg"
+    },
+    {
+      "id": "s07",
+      "name": "Ksar dans le Sahara",
+      "type": "exterieur",
+      "img": "assets/locations/real-s07.jpg"
+    },
+    {
+      "id": "s08",
+      "name": "Tombeau de la Chrétienne · Tipaza",
+      "type": "exterieur",
+      "img": "assets/locations/real-s08.jpg"
+    },
+    {
+      "id": "s09",
+      "name": "Santa Cruz · Oran",
+      "type": "exterieur",
+      "img": "assets/locations/real-s09.jpg"
+    },
+    {
+      "id": "s10",
+      "name": "Paris · Tour Eiffel",
+      "type": "exterieur",
+      "img": "assets/locations/real-s10.jpg"
+    },
+    {
+      "id": "s11",
+      "name": "Istanbul · Bosphore",
+      "type": "exterieur",
+      "img": "assets/locations/real-s11.jpg"
+    },
+    {
+      "id": "s12",
+      "name": "Dubaï · Burj Khalifa",
+      "type": "exterieur",
+      "img": "assets/locations/real-s12.jpg"
+    },
+    {
+      "id": "a01",
+      "name": "Grande Poste · Alger",
+      "type": "exterieur",
+      "img": "assets/locations/real-a01.jpg"
+    },
+    {
+      "id": "a02",
+      "name": "Alger centre · rue haussmannienne",
+      "type": "exterieur",
+      "img": "assets/locations/real-a02.jpg"
+    },
+    {
+      "id": "a03",
+      "name": "Alger centre · immeuble d'angle",
+      "type": "exterieur",
+      "img": "assets/locations/real-a03.jpg"
+    },
+    {
+      "id": "a04",
+      "name": "Front de mer · arcades d'Alger",
+      "type": "exterieur",
+      "img": "assets/locations/real-a04.jpg"
+    },
+    {
+      "id": "s04",
+      "name": "Jardin d'Essai · allée des dragonniers",
+      "type": "exterieur",
+      "img": "assets/locations/real-s04.jpg"
+    },
+    {
+      "id": "s03",
+      "name": "Notre-Dame d'Afrique · Alger",
+      "type": "exterieur",
+      "img": ""
+    },
+    {
+      "id": "s13",
+      "name": "Jardin d'Essai · grande allée & bassin",
+      "type": "exterieur",
+      "img": ""
+    },
+    {
+      "id": "s14",
+      "name": "Alger centre · la nuit",
+      "type": "exterieur",
+      "img": ""
+    }
+  ],
+  "portfolio": [
+    {
+      "title": "Campagne · mannequin & bijoux",
+      "tag": "Vidéo",
+      "video": "assets/videos/hero-2-mannequin.mp4"
+    },
+    {
+      "title": "Karakou velours brodé",
+      "tag": "Mode · Traditionnel",
+      "img": "assets/portfolio/karakou-velours.webp",
+      "pos": "50% 30%"
+    },
+    {
+      "title": "Boucles d'oreilles or & diamants",
+      "tag": "Bijoux",
+      "img": "assets/portfolio/boucles-or-diamants.webp",
+      "pos": "50% 55%"
+    },
+    {
+      "title": "Pull en maille · e-commerce",
+      "tag": "Mode · Moderne",
+      "img": "assets/portfolio/pull-maille.webp"
+    },
+    {
+      "title": "Écouteurs sans fil · pub",
+      "tag": "Produit",
+      "img": "assets/portfolio/ecouteurs.webp"
+    },
+    {
+      "title": "Portrait bijoux · lumière or",
+      "tag": "Bijoux",
+      "img": "assets/hero-frames/shot3-portrait-bijoux.webp",
+      "pos": "65% 35%"
+    }
+  ],
+  "portfolioView": "all"
+}
