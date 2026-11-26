@@ -212,6 +212,7 @@ const LOCATIONS = [
 /* ---------- PORTFOLIO (الخدمات لي درتيهم) ---------- */
 // pos = partie de l'image à montrer dans la carte (16:10)
 const PORTFOLIO = [
+  { title: "Karakou · des toits de la Casbah", tag: "Mode · Traditionnel", quality: "ultra", video: "assets/portfolio/karakou-casbah.mp4" },
   { title: "Campagne · mannequin & bijoux", tag: "Vidéo",               video: "assets/videos/hero-2-mannequin.mp4" },
   { title: "Karakou velours brodé",         tag: "Mode · Traditionnel", img: "assets/portfolio/karakou-velours.webp", pos: "50% 30%" },
   { title: "Boucles d'oreilles or & diamants", tag: "Bijoux",           img: "assets/portfolio/boucles-or-diamants.webp", pos: "50% 55%" },

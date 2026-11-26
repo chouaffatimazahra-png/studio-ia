@@ -1138,6 +1138,12 @@
   ],
   "portfolio": [
     {
+      "title": "Karakou · des toits de la Casbah",
+      "tag": "Mode · Traditionnel",
+      "quality": "ultra",
+      "video": "assets/portfolio/karakou-casbah.mp4"
+    },
+    {
       "title": "Campagne · mannequin & bijoux",
       "tag": "Vidéo",
       "video": "assets/videos/hero-2-mannequin.mp4"
