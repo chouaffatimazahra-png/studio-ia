@@ -354,13 +354,74 @@ function startSite(savedData) {
       filterEl.hidden = false;
     } else if (filterEl) filterEl.hidden = true;
     const list = PORTFOLIO.filter((p) => state.port === "all" || portKey(p) === state.port);
-    $("#portGrid").innerHTML = list.map((p) => `
-      <div class="card reveal ${firstRender ? "" : "in"}">
+    portList = list;
+    $("#portGrid").innerHTML = list.map((p, i) => `
+      <div class="card reveal ${firstRender ? "" : "in"}" data-i="${i}" role="button" tabindex="0" aria-label="${esc(t("port.open"))} : ${esc(p.title)}">
         <div class="media">${media(p, t("portfolio.soon"))}</div>
         <div class="meta"><span>${esc(p.title)}</span><small>${esc(p.tag || "")}</small></div>
       </div>`).join("");
     initVideos($("#portGrid"));
   }
+
+  /* PORTFOLIO EN GRAND : clic → plein écran, flèches / clavier / glisser le doigt pour voir la suite */
+  let portList = [], lbIndex = 0, lbResume = [];
+  const lb = $("#lb"), lbStage = $("#lbStage");
+  const isRtl = () => document.documentElement.dir === "rtl";
+  function lbShow(i) {
+    const n = portList.length; if (!n) return;
+    lbIndex = ((i % n) + n) % n;
+    const p = portList[lbIndex];
+    lbStage.innerHTML = p.video
+      ? `<video src="${p.video}"${p.poster ? ` poster="${p.poster}"` : ""} muted loop playsinline autoplay></video>`
+      : p.img ? `<img src="${p.img}" alt="${esc(p.title)}">` : media(p, t("portfolio.soon"));
+    const v = lbStage.querySelector("video");
+    if (v) { v.muted = true; v.play().catch(() => {}); }
+    $("#lbTitle").textContent = p.title || "";
+    $("#lbTag").textContent = p.tag || "";
+    $("#lbCount").textContent = `${lbIndex + 1} / ${n}`;
+    [1, -1].forEach((d) => { const q = portList[(lbIndex + d + n) % n]; const src = q && (q.img || q.poster); if (src) new Image().src = src; });
+  }
+  function lbOpen(i) {
+    $("#lbClose").setAttribute("aria-label", t("lb.close"));
+    $("#lbPrev").setAttribute("aria-label", t("lb.prev"));
+    $("#lbNext").setAttribute("aria-label", t("lb.next"));
+    // on met en pause les vidéos de la grille derrière (économie de données)
+    lbResume = [...document.querySelectorAll("#portGrid video")].filter((v) => !v.paused);
+    lbResume.forEach((v) => v.pause());
+    lb.hidden = false; document.documentElement.classList.add("terms-open");
+    lbShow(i);
+    $("#lbClose").focus();
+  }
+  function lbClose() {
+    lb.hidden = true; document.documentElement.classList.remove("terms-open");
+    lbStage.innerHTML = "";
+    lbResume.forEach((v) => v.play().catch(() => {})); lbResume = [];
+    const card = $(`#portGrid .card[data-i="${lbIndex}"]`);
+    if (card) card.focus({ preventScroll: true });
+  }
+  $("#portGrid").addEventListener("click", (e) => { const c = e.target.closest(".card[data-i]"); if (c) lbOpen(+c.dataset.i); });
+  $("#portGrid").addEventListener("keydown", (e) => {
+    if ((e.key === "Enter" || e.key === " ") && e.target.matches(".card[data-i]")) { e.preventDefault(); lbOpen(+e.target.dataset.i); }
+  });
+  $("#lbClose").addEventListener("click", lbClose);
+  $("#lbPrev").addEventListener("click", () => lbShow(lbIndex - 1));
+  $("#lbNext").addEventListener("click", () => lbShow(lbIndex + 1));
+  lb.addEventListener("click", (e) => { if (e.target === lb || e.target.id === "lbFig" || e.target === lbStage) lbClose(); });
+  addEventListener("keydown", (e) => {
+    if (lb.hidden) return;
+    if (e.key === "Escape") lbClose();
+    else if (e.key === "ArrowRight") lbShow(lbIndex + (isRtl() ? -1 : 1));
+    else if (e.key === "ArrowLeft") lbShow(lbIndex + (isRtl() ? 1 : -1));
+  });
+  let swipeX = null, swipeY = null;
+  lb.addEventListener("touchstart", (e) => { const p0 = e.touches[0]; swipeX = p0.clientX; swipeY = p0.clientY; }, { passive: true });
+  lb.addEventListener("touchend", (e) => {
+    if (swipeX === null) return;
+    const p1 = e.changedTouches[0], dx = p1.clientX - swipeX, dy = p1.clientY - swipeY;
+    swipeX = null;
+    if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) lbShow(lbIndex + ((dx < 0) !== isRtl() ? 1 : -1));
+    else if (dy > 100 && Math.abs(dy) > Math.abs(dx) * 1.5) lbClose(); // glisser vers le bas = fermer
+  }, { passive: true });
 
   /* PACKS */
   function renderPacks() {

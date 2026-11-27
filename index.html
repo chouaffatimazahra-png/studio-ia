@@ -179,6 +179,7 @@
     </div>
     <div class="filters"><div class="chips" id="portFilter" hidden></div></div>
     <div class="grid port" id="portGrid"></div>
+    <p class="port-note" data-i18n="port.disclaimer">Tous les mannequins et personnages présentés sur ce site sont créés par intelligence artificielle : ce sont des personnes fictives. Toute ressemblance avec une personne existante serait purement fortuite.</p>
   </section>
 
   <!-- COMMENT ÇA MARCHE -->
@@ -238,6 +239,22 @@
       <button type="button" class="terms-x" id="zoomClose" aria-label="Fermer">✕</button>
       <div class="zoom-body" id="zoomBody"></div>
     </div>
+  </div>
+
+  <!-- Portfolio en grand : clic sur une réalisation → plein écran, suivante / précédente -->
+  <div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-labelledby="lbTitle">
+    <button type="button" class="lb-x" id="lbClose" aria-label="Fermer">✕</button>
+    <button type="button" class="lb-nav lb-prev" id="lbPrev" aria-label="Précédent">‹</button>
+    <figure class="lb-fig" id="lbFig">
+      <div class="lb-stage" id="lbStage"></div>
+      <figcaption class="lb-cap">
+        <span class="lb-title" id="lbTitle"></span>
+        <span class="lb-tag" id="lbTag"></span>
+        <span class="lb-count" id="lbCount"></span>
+      </figcaption>
+      <p class="lb-note" data-i18n="port.disclaimer">Tous les mannequins et personnages présentés sur ce site sont créés par intelligence artificielle : ce sont des personnes fictives. Toute ressemblance avec une personne existante serait purement fortuite.</p>
+    </figure>
+    <button type="button" class="lb-nav lb-next" id="lbNext" aria-label="Suivant">›</button>
   </div>
 
   <!-- Conditions générales (fenêtre) -->
