@@ -49,7 +49,7 @@ function startSite(savedData) {
         <span class="spin-hint">â†” 360Â°</span>
       </div>`;
     }
-    if (item.video) return `<video src="${item.video}" muted loop playsinline autoplay preload="metadata"></video>`;
+    if (item.video) return `<video class="lazy-vid" data-src="${item.video}"${item.poster ? ` poster="${item.poster}"` : ""} muted loop playsinline preload="none"></video>`;
     if (item.img) return `<img src="${item.img}" alt="${esc(item.name || item.title)}" loading="lazy"${item.pos ? ` style="object-position:${item.pos}"` : ""}>`;
     const name = item.name || item.title || "";
     return `<div class="ph" style="--h:${hueOf(name)}"><span class="ph-mono">${name.charAt(0)}</span><span class="ph-label">${label}</span></div>`;
@@ -138,6 +138,14 @@ function startSite(savedData) {
     pic.onload = () => { sp.style.setProperty("--ar", pic.naturalWidth / n / pic.naturalHeight); img.style.backgroundImage = `url('${img.dataset.bg}')`; sp.classList.add("loaded"); };
     pic.src = img.dataset.bg;
   }), { rootMargin: "300px" });
+
+  // vidéos (portfolio, lieux) : chargées et jouées seulement quand elles sont visibles
+  const lazyVid = new IntersectionObserver((entries) => entries.forEach((e) => {
+    const v = e.target;
+    if (e.isIntersecting) { if (!v.getAttribute("src")) v.src = v.dataset.src; v.play().catch(() => {}); }
+    else if (!v.paused) v.pause();
+  }), { rootMargin: "200px" });
+  function initVideos(root) { (root || document).querySelectorAll("video.lazy-vid").forEach((v) => lazyVid.observe(v)); }
 
   function initSpins(root) {
     root.querySelectorAll(".spin").forEach((sp) => {
@@ -301,6 +309,7 @@ function startSite(savedData) {
     const row = $("#locsGrid");
     if (!keepScroll) row.scrollLeft = 0;
     updateRowNav(row);
+    initVideos(row);
   }
   $("#locsGrid").onclick = (e) => {
     const c = e.target.closest(".card"); if (!c) return;
@@ -350,6 +359,7 @@ function startSite(savedData) {
         <div class="media">${media(p, t("portfolio.soon"))}</div>
         <div class="meta"><span>${esc(p.title)}</span><small>${esc(p.tag || "")}</small></div>
       </div>`).join("");
+    initVideos($("#portGrid"));
   }
 
   /* PACKS */

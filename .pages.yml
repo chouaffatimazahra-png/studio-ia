@@ -93,6 +93,7 @@ content:
           - { name: hidden, label: "Cacher du site", type: boolean }
           - { name: img, label: Photo, type: image }
           - { name: video, label: "Vidéo (mp4)", type: file }
+          - { name: poster, label: "Image d'aperçu de la vidéo", type: image }
 
       - name: portfolioView
         label: "🗂️ Affichage du portfolio"

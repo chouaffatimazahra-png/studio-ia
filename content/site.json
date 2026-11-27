@@ -1141,7 +1141,304 @@
       "title": "Karakou · des toits de la Casbah",
       "tag": "Mode · Traditionnel",
       "quality": "ultra",
-      "video": "assets/portfolio/karakou-casbah.mp4"
+      "video": "assets/portfolio/karakou-casbah.mp4",
+      "poster": "assets/portfolio/karakou-casbah.webp"
+    },
+    {
+      "title": "Veste fourrure · le tour",
+      "tag": "Mode · Femme",
+      "quality": "ultra",
+      "video": "assets/portfolio/fourrure-tour.mp4",
+      "poster": "assets/portfolio/fourrure-tour.webp"
+    },
+    {
+      "title": "Sac rouge · rue Didouche Mourad",
+      "tag": "Accessoires",
+      "quality": "ultra",
+      "video": "assets/portfolio/sac-diva.mp4",
+      "poster": "assets/portfolio/sac-diva.webp"
+    },
+    {
+      "title": "Escarpins · les pas",
+      "tag": "Accessoires",
+      "quality": "ultra",
+      "video": "assets/portfolio/escarpins-film.mp4",
+      "poster": "assets/portfolio/escarpins-film.webp"
+    },
+    {
+      "title": "Sac rouge · lumière",
+      "tag": "Accessoires",
+      "quality": "ultra",
+      "video": "assets/portfolio/sac-lumiere.mp4",
+      "poster": "assets/portfolio/sac-lumiere.webp"
+    },
+    {
+      "title": "Rouge à lèvres · or",
+      "tag": "Beauté",
+      "quality": "ultra",
+      "video": "assets/portfolio/rouge-film.mp4",
+      "poster": "assets/portfolio/rouge-film.webp"
+    },
+    {
+      "title": "Tenue sport · Sablettes",
+      "tag": "Sport",
+      "quality": "ultra",
+      "video": "assets/portfolio/sport-course.mp4",
+      "poster": "assets/portfolio/sport-course.webp"
+    },
+    {
+      "title": "Pyjama satin · rires",
+      "tag": "Mode · Nuit",
+      "quality": "ultra",
+      "video": "assets/portfolio/pyjama-rire.mp4",
+      "poster": "assets/portfolio/pyjama-rire.webp"
+    },
+    {
+      "title": "Écouteurs · démo produit",
+      "tag": "Produit",
+      "quality": "ultra",
+      "video": "assets/portfolio/ecouteurs-film.mp4",
+      "poster": "assets/portfolio/ecouteurs-film.webp"
+    },
+    {
+      "title": "Veste fourrure · studio",
+      "tag": "Mode · Femme",
+      "quality": "pro",
+      "img": "assets/portfolio/fourrure-face.webp"
+    },
+    {
+      "title": "Veste fourrure · dos",
+      "tag": "Mode · Femme",
+      "quality": "pro",
+      "img": "assets/portfolio/fourrure-dos.webp"
+    },
+    {
+      "title": "Manteau fourrure long",
+      "tag": "Mode · Femme",
+      "quality": "pro",
+      "img": "assets/portfolio/manteau-fourrure.webp"
+    },
+    {
+      "title": "Col fourrure · gros plan",
+      "tag": "Mode · Femme",
+      "quality": "pro",
+      "img": "assets/portfolio/fourrure-col.webp"
+    },
+    {
+      "title": "Veste fourrure · assise",
+      "tag": "Mode · Femme",
+      "quality": "pro",
+      "img": "assets/portfolio/fourrure-assise.webp"
+    },
+    {
+      "title": "Fourrure · portrait",
+      "tag": "Mode · Femme",
+      "quality": "pro",
+      "img": "assets/portfolio/fourrure-portrait.webp"
+    },
+    {
+      "title": "Pyjama satin · tour d'oreillers",
+      "tag": "Mode · Nuit",
+      "quality": "pro",
+      "img": "assets/portfolio/pyjama-tour.webp"
+    },
+    {
+      "title": "Pyjama satin · coulisses",
+      "tag": "Mode · Nuit",
+      "quality": "pro",
+      "img": "assets/portfolio/pyjama-oreillers.webp"
+    },
+    {
+      "title": "Tenue sport · footing",
+      "tag": "Sport",
+      "quality": "pro",
+      "img": "assets/portfolio/sport-sablettes.webp"
+    },
+    {
+      "title": "Tenue sport · détail tissu",
+      "tag": "Sport",
+      "quality": "pro",
+      "img": "assets/portfolio/sport-tissu.webp"
+    },
+    {
+      "title": "Tenue sport · foulée",
+      "tag": "Sport",
+      "quality": "pro",
+      "img": "assets/portfolio/sport-baskets.webp"
+    },
+    {
+      "title": "Sac rouge · nature morte",
+      "tag": "Accessoires",
+      "quality": "pro",
+      "img": "assets/portfolio/sac-rouge-pierre.webp"
+    },
+    {
+      "title": "Sac rouge · passage piéton",
+      "tag": "Accessoires",
+      "quality": "pro",
+      "img": "assets/portfolio/sac-rouge-rue.webp"
+    },
+    {
+      "title": "Escarpins · 4 couleurs",
+      "tag": "Accessoires",
+      "quality": "pro",
+      "img": "assets/portfolio/escarpins-marches.webp"
+    },
+    {
+      "title": "Escarpins sauge",
+      "tag": "Accessoires",
+      "quality": "pro",
+      "img": "assets/portfolio/escarpins-pas.webp"
+    },
+    {
+      "title": "Rouge à lèvres · étagère",
+      "tag": "Beauté",
+      "quality": "pro",
+      "img": "assets/portfolio/rouge-a-levres.webp"
+    },
+    {
+      "title": "Crème · tube vert",
+      "tag": "Beauté",
+      "quality": "pro",
+      "img": "assets/portfolio/creme-tube.webp"
+    },
+    {
+      "title": "Lookbook · projecteur",
+      "tag": "Mode · Femme",
+      "quality": "pro",
+      "img": "assets/portfolio/look-projecteur.webp"
+    },
+    {
+      "title": "Lookbook · lecture",
+      "tag": "Mode · Femme",
+      "quality": "pro",
+      "img": "assets/portfolio/look-lecture.webp"
+    },
+    {
+      "title": "Lookbook · métro",
+      "tag": "Mode · Femme",
+      "quality": "pro",
+      "img": "assets/portfolio/look-metro.webp"
+    },
+    {
+      "title": "Lookbook · noir & blanc",
+      "tag": "Mode · Femme",
+      "quality": "pro",
+      "img": "assets/portfolio/look-allongee.webp"
+    },
+    {
+      "title": "Lookbook · arcades",
+      "tag": "Mode · Femme",
+      "quality": "pro",
+      "img": "assets/portfolio/look-arcades.webp"
+    },
+    {
+      "title": "Lookbook · escalier",
+      "tag": "Mode · Femme",
+      "quality": "pro",
+      "img": "assets/portfolio/look-escalier.webp"
+    },
+    {
+      "title": "Lookbook · colonnes",
+      "tag": "Mode · Femme",
+      "quality": "pro",
+      "img": "assets/portfolio/look-colonnes.webp"
+    },
+    {
+      "title": "Lookbook · toit",
+      "tag": "Mode · Femme",
+      "quality": "pro",
+      "img": "assets/portfolio/look-toit.webp"
+    },
+    {
+      "title": "Lookbook · visière",
+      "tag": "Mode · Femme",
+      "quality": "pro",
+      "img": "assets/portfolio/look-visiere.webp"
+    },
+    {
+      "title": "Lookbook · mur bleu",
+      "tag": "Mode · Femme",
+      "quality": "pro",
+      "img": "assets/portfolio/look-mur-bleu.webp"
+    },
+    {
+      "title": "Lookbook · rire",
+      "tag": "Mode · Femme",
+      "quality": "pro",
+      "img": "assets/portfolio/look-rire.webp"
+    },
+    {
+      "title": "Lookbook · cuir",
+      "tag": "Mode · Femme",
+      "quality": "pro",
+      "img": "assets/portfolio/look-cuir.webp"
+    },
+    {
+      "title": "Lookbook · nuit",
+      "tag": "Mode · Femme",
+      "quality": "pro",
+      "img": "assets/portfolio/look-nuit.webp"
+    },
+    {
+      "title": "Lookbook · pluie",
+      "tag": "Mode · Femme",
+      "quality": "pro",
+      "img": "assets/portfolio/look-pluie.webp"
+    },
+    {
+      "title": "Lookbook · satin",
+      "tag": "Mode · Femme",
+      "quality": "pro",
+      "img": "assets/portfolio/look-satin.webp"
+    },
+    {
+      "title": "Lookbook · dentelle",
+      "tag": "Mode · Femme",
+      "quality": "pro",
+      "img": "assets/portfolio/look-dentelle.webp"
+    },
+    {
+      "title": "Lookbook · patchwork",
+      "tag": "Mode · Femme",
+      "quality": "pro",
+      "img": "assets/portfolio/look-patchwork.webp"
+    },
+    {
+      "title": "Homme · costume crème",
+      "tag": "Mode · Homme",
+      "quality": "pro",
+      "img": "assets/portfolio/homme-costume.webp"
+    },
+    {
+      "title": "Homme · portrait",
+      "tag": "Mode · Homme",
+      "quality": "pro",
+      "img": "assets/portfolio/homme-portrait.webp"
+    },
+    {
+      "title": "Homme · utilitaire",
+      "tag": "Mode · Homme",
+      "quality": "pro",
+      "img": "assets/portfolio/homme-utilitaire.webp"
+    },
+    {
+      "title": "Homme · cadrage",
+      "tag": "Mode · Homme",
+      "quality": "pro",
+      "img": "assets/portfolio/homme-mains.webp"
+    },
+    {
+      "title": "Homme · voiture vintage",
+      "tag": "Mode · Homme",
+      "quality": "pro",
+      "img": "assets/portfolio/homme-voiture.webp"
+    },
+    {
+      "title": "Homme · couleur",
+      "tag": "Mode · Homme",
+      "quality": "pro",
+      "img": "assets/portfolio/homme-chaise.webp"
     },
     {
       "title": "Campagne · mannequin & bijoux",
@@ -1177,5 +1474,5 @@
       "pos": "65% 35%"
     }
   ],
-  "portfolioView": "all"
+  "portfolioView": "category"
 }
