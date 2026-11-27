@@ -1,7 +1,7 @@
-﻿/* STUDIOÂ·IA â€” logique du site (contenu dans data.js, textes/langues dans i18n.js) */
-/* OÃ¹ sont les donnÃ©es modifiÃ©es par Zahra ?
+/* STUDIO·IA — logique du site (contenu dans data.js, textes/langues dans i18n.js) */
+/* Où sont les données modifiées par Zahra ?
    - sur claude.ai : dans la page (<script id="site-data">)
-   - sur GitHub Pages : dans content/site.json (modifiÃ© avec Pages CMS) */
+   - sur GitHub Pages : dans content/site.json (modifié avec Pages CMS) */
 (function loadSiteData() {
   let embedded = null;
   try { const el = document.getElementById("site-data"); embedded = el ? JSON.parse(el.textContent || "null") : null; } catch (_) {}
@@ -17,8 +17,8 @@ function startSite(savedData) {
   const hueOf = (str) => [...str].reduce((a, c) => a + c.charCodeAt(0) * 7, 0) % 360;
   const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;");
 
-  /* ---------- donnÃ©es enregistrÃ©es (admin) ----------
-     data.js = valeurs de dÃ©part ; savedData = ce que Zahra a modifiÃ© */
+  /* ---------- données enregistrées (admin) ----------
+     data.js = valeurs de départ ; savedData = ce que Zahra a modifié */
   (function applySiteData() {
     const saved = savedData;
     const full = saved || {
@@ -29,7 +29,7 @@ function startSite(savedData) {
     window.SITE_FULL = JSON.parse(JSON.stringify(full));
     if (!saved) return;
     Object.assign(SITE, saved.site || {});
-    (saved.packs || []).forEach((sp) => { const p = PACKS.find((x) => x.id === sp.id); if (p) p.price = sp.price || "â€”"; });
+    (saved.packs || []).forEach((sp) => { const p = PACKS.find((x) => x.id === sp.id); if (p) p.price = sp.price || "—"; });
     const visible = (arr) => (arr || []).filter((x) => !x.hidden);
     MODELS.splice(0, MODELS.length, ...visible(saved.models));
     LOCATIONS.splice(0, LOCATIONS.length, ...visible(saved.locations));
@@ -40,13 +40,13 @@ function startSite(savedData) {
   const state = { cat: "femmes", size: "all", locType: "tous", models: new Set(), loc: null, customLoc: "", format: null, pack: null, port: "all" };
   let firstRender = true;
 
-  /* media: planche 3D (sheet) / image / vidÃ©o si dispo, sinon placeholder */
+  /* media: planche 3D (sheet) / image / vidéo si dispo, sinon placeholder */
   function media(item, label) {
     if (item.sheet) {
       const n = item.frames || 4;
       return `<div class="spin" data-frames="${n}" data-turn="${item.turn || ""}">
         <div class="spin-img" data-bg="${item.sheet}" style="background-size:${n * 100}% 100%"></div>
-        <span class="spin-hint">â†” 360Â°</span>
+        <span class="spin-hint">↔ 360°</span>
       </div>`;
     }
     if (item.video) return `<video class="lazy-vid" data-src="${item.video}"${item.poster ? ` poster="${item.poster}"` : ""} muted loop playsinline preload="none"></video>`;
@@ -59,14 +59,14 @@ function startSite(savedData) {
   document.querySelectorAll("[data-brand]").forEach((el) => (el.textContent = SITE.brand));
   $("#year").textContent = new Date().getFullYear();
 
-  /* hero video: un fichier ou une liste jouÃ©e Ã  la suite, en boucle, avec fondu */
+  /* hero video: un fichier ou une liste jouée à la suite, en boucle, avec fondu */
   const pick = (matchMedia("(max-width: 700px)").matches && SITE.heroVideoMobile && SITE.heroVideoMobile.length) ? SITE.heroVideoMobile : SITE.heroVideo;
   const clips = [].concat(pick || []).filter(Boolean);
   if (clips.length) {
     const bg = $("#heroBg");
     bg.classList.add("has-video");
     bg.insertAdjacentHTML("beforeend", '<div class="hero-film"></div>');
-    // tÃ©lÃ©phones (iPhone surtout) : il faut les ATTRIBUTS muted + playsinline, sinon la vidÃ©o reste noire
+    // téléphones (iPhone surtout) : il faut les ATTRIBUTS muted + playsinline, sinon la vidéo reste noire
     const posters = [].concat(SITE.heroPoster || []);
     const players = [0, 1].map(() => {
       const v = document.createElement("video");
@@ -76,7 +76,7 @@ function startSite(savedData) {
       return v;
     });
     const setClip = (v, i) => { if (posters[i]) v.poster = posters[i]; v.src = clips[i]; };
-    // si le navigateur bloque la lecture automatique : on relance au premier toucher de l'Ã©cran
+    // si le navigateur bloque la lecture automatique : on relance au premier toucher de l'écran
     const kick = () => { players.forEach((p) => p.classList.contains("on") && p.play().catch(() => {})); };
     ["touchstart", "click", "scroll"].forEach((ev) => addEventListener(ev, kick, { once: true, passive: true }));
     let idx = 0, cur = 0;
@@ -128,8 +128,8 @@ function startSite(savedData) {
     el.onclick = (e) => { const b = e.target.closest(".chip"); if (b && !b.disabled) onPick(b.dataset.id); };
   }
 
-  /* 3D : la souris (ou le doigt) fait tourner le mannequin d'une vue Ã  l'autre + lÃ©ger tilt */
-  // chargement paresseux : l'image d'un mannequin ne se tÃ©lÃ©charge que quand il devient visible
+  /* 3D : la souris (ou le doigt) fait tourner le mannequin d'une vue à l'autre + léger tilt */
+  // chargement paresseux : l'image d'un mannequin ne se télécharge que quand il devient visible
   const lazyBg = new IntersectionObserver((entries) => entries.forEach((e) => {
     if (!e.isIntersecting) return;
     const sp = e.target, img = sp.querySelector(".spin-img"), n = +sp.dataset.frames;
@@ -164,7 +164,7 @@ function startSite(savedData) {
       const leave = () => { setFrame(0); sp.style.setProperty("--ry", "0deg"); sp.style.setProperty("--rx", "0deg"); sp.classList.remove("active"); };
       sp.addEventListener("pointermove", (e) => { if (e.pointerType === "mouse") move(e.clientX, e.clientY); });
       sp.addEventListener("pointerleave", leave);
-      // au doigt : un appui long (sans glisser la rangÃ©e) fait tourner
+      // au doigt : un appui long (sans glisser la rangée) fait tourner
       sp.addEventListener("touchmove", (e) => { const tt = e.touches[0]; move(tt.clientX, tt.clientY); }, { passive: true });
       sp.addEventListener("touchend", leave);
       if (sp.dataset.turn) {
@@ -181,7 +181,7 @@ function startSite(savedData) {
   function renderMarquee() {
     const realModels = MODELS.filter((m) => m.sheet && m.hero !== false);
     const mq = realModels.length >= 6
-      ? realModels.concat(realModels).map((m) => media(m, `${m.name} Â· ${m.size}`)).join("")
+      ? realModels.concat(realModels).map((m) => media(m, `${m.name} · ${m.size}`)).join("")
       : (typeof MARQUEE !== "undefined" && MARQUEE.length)
       ? MARQUEE.concat(MARQUEE).map((m) => `<figure class="mq-item"><img src="${m.img}" alt="" loading="lazy" style="object-position:${m.pos || "50% 50%"}"><figcaption>${m.label || ""}</figcaption></figure>`).join("")
       : "";
@@ -190,7 +190,7 @@ function startSite(savedData) {
     initSpins($("#marquee"));
   }
 
-  /* CASTING â€” une seule rangÃ©e qu'on fait glisser */
+  /* CASTING — une seule rangée qu'on fait glisser */
   function renderCasting() {
     chips($("#catFilter"), CATEGORIES.map((c) => ({ id: c.id, label: `${t("cat." + c.id)} <small>${MODELS.filter((m) => m.cat === c.id).length}</small>` })), state.cat,
       (id) => { state.cat = id; state.size = "all"; renderCasting(); });
@@ -207,8 +207,8 @@ function startSite(savedData) {
       ? list.map((m, i) => `
         <button class="card ${state.models.has(m.id) ? "selected" : ""}" data-id="${m.id}" style="animation-delay:${Math.min(i, 8) * 50}ms">
           <div class="media">${media(m, t("casting.soon"))}${m.face ? `<img class="face" src="${m.face}" alt="${t("casting.face")} ${esc(m.name)}" loading="lazy">` : ""}
-            <span class="zoom-btn" data-zoom="${m.id}" role="button" tabindex="0" aria-label="${t("casting.zoom")}">â¤¢</span></div>
-          <span class="check">âœ“</span>
+            <span class="zoom-btn" data-zoom="${m.id}" role="button" tabindex="0" aria-label="${t("casting.zoom")}">⤢</span></div>
+          <span class="check">✓</span>
           <div class="meta"><span>${esc(m.name)}</span><small>${esc(m.size)}</small></div>
         </button>`).join("")
       : `<p class="empty">${t("casting.empty")}</p>`;
@@ -226,7 +226,7 @@ function startSite(savedData) {
       <div class="zoom-side">
         ${m.face ? `<img class="zoom-face" src="${m.face}" alt="${t("casting.face")} ${esc(m.name)}">` : ""}
         <h3>${esc(m.name)}</h3>
-        <p class="zoom-meta">${esc(t("cat." + m.cat))} Â· ${esc(m.size)}</p>
+        <p class="zoom-meta">${esc(t("cat." + m.cat))} · ${esc(m.size)}</p>
         <p class="zoom-hint">${t("casting.turn")}</p>
         <button type="button" class="btn ${sel ? "btn-ghost" : ""}" id="zoomPick">${sel ? t("casting.unpick") : t("casting.pick")}</button>
       </div>`;
@@ -254,7 +254,7 @@ function startSite(savedData) {
     update();
   };
 
-  /* flÃ¨ches de la rangÃ©e */
+  /* flèches de la rangée */
   function updateRowNav(row) {
     const wrap = row.closest(".row-wrap"); if (!wrap) return;
     const max = row.scrollWidth - row.clientWidth;
@@ -292,18 +292,18 @@ function startSite(savedData) {
     $("#locsGrid").innerHTML = list.map((l, i) => `
       <button class="card ${state.loc === l.id ? "selected" : ""}" data-id="${l.id}" style="animation-delay:${Math.min(i, 12) * 40}ms">
         <div class="media">${media(l, l.img ? t("type." + l.type) : t("loc.soonLong"))}</div>
-        <span class="check">âœ“</span>
+        <span class="check">✓</span>
         <div class="meta"><span>${esc(l.name)}</span><small>${l.img ? t("type." + l.type) : t("loc.soon")}</small></div>
       </button>`).join("") + `
       <div class="card custom-loc ${state.loc === "custom" ? "selected" : ""}" data-id="custom" role="button" tabindex="0">
         <div class="media custom-media">
-          <span class="custom-pin">ðŸ“</span>
+          <span class="custom-pin">📍</span>
           <strong>${t("custom.title")}</strong>
           <p>${t("custom.desc")}</p>
           <input type="text" id="customLoc" placeholder="${esc(t("custom.ph"))}" value="${esc(state.customLoc)}">
           <small>${t("custom.note")}</small>
         </div>
-        <span class="check">âœ“</span>
+        <span class="check">✓</span>
         <div class="meta"><span>${t("custom.meta")}</span><small>${t("custom.any")}</small></div>
       </div>`;
     const row = $("#locsGrid");
@@ -340,9 +340,9 @@ function startSite(savedData) {
   };
 
   /* PORTFOLIO */
-  // filtres du portfolio selon le choix de Zahra (admin) : catÃ©gorie, qualitÃ©, ou photos/vidÃ©os
+  // filtres du portfolio selon le choix de Zahra (admin) : catégorie, qualité, ou photos/vidéos
   const QUALITY_LABEL = { standard: "Standard", pro: "Pro", ultra: "Ultra" };
-  const portKey = (p) => PORT_VIEW === "category" ? (p.tag || "â€”") : PORT_VIEW === "quality" ? (QUALITY_LABEL[p.quality] || "â€”") : PORT_VIEW === "type" ? (p.video ? "video" : "photo") : "all";
+  const portKey = (p) => PORT_VIEW === "category" ? (p.tag || "—") : PORT_VIEW === "quality" ? (QUALITY_LABEL[p.quality] || "—") : PORT_VIEW === "type" ? (p.video ? "video" : "photo") : "all";
   function renderPortfolio() {
     const filterEl = $("#portFilter");
     if (PORT_VIEW !== "all" && filterEl) {
@@ -370,7 +370,7 @@ function startSite(savedData) {
       <div class="pack reveal ${firstRender ? "" : "in"} ${p.featured ? "featured" : ""} ${state.pack === p.id ? "selected" : ""}" data-id="${p.id}">
         ${p.featured ? `<span class="badge">${t("packs.popular")}</span>` : ""}
         <h3>${p.name}</h3>
-        <div class="price">${p.price && p.price !== "â€”"
+        <div class="price">${p.price && p.price !== "—"
           ? `${p.price} <small>${SITE.currency} ${t(p.period === "une fois" ? "period.once" : "period.month")}</small>`
           : `<span class="quote">${t("packs.quote")}</span>`}</div>
         <p class="desc">${t(`pack.${p.id}.desc`)}</p>
@@ -395,16 +395,16 @@ function startSite(savedData) {
       : (LOCATIONS.find((l) => l.id === state.loc) || {}).name;
     const pack = PACKS.find((p) => p.id === state.pack);
     const rows = [
-      [t("sum.models"), models.join(", ") || "â€”"],
-      [t("sum.location"), locName || "â€”"],
-      [t("sum.format"), state.format ? t(FORMAT_KEY[state.format]) : "â€”"],
-      [t("sum.pack"), pack ? pack.name : "â€”"],
+      [t("sum.models"), models.join(", ") || "—"],
+      [t("sum.location"), locName || "—"],
+      [t("sum.format"), state.format ? t(FORMAT_KEY[state.format]) : "—"],
+      [t("sum.pack"), pack ? pack.name : "—"],
     ];
     $("#summary").innerHTML = rows.map(([k, v]) => `<li>${k} : <b>${esc(v)}</b></li>`).join("");
 
-    const msg = `${t("msg.hello", { b: SITE.brand })}\n${t("msg.want")}\n` + rows.map(([k, v]) => `â€¢ ${k} : ${v}`).join("\n");
+    const msg = `${t("msg.hello", { b: SITE.brand })}\n${t("msg.want")}\n` + rows.map(([k, v]) => `• ${k} : ${v}`).join("\n");
     $("#waBtn").href = `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(msg)}`;
-    $("#mailBtn").hidden = !SITE.email || /exemple|example/.test(SITE.email); // cachÃ© tant que l'e-mail n'est pas le vrai
+    $("#mailBtn").hidden = !SITE.email || /exemple|example/.test(SITE.email); // caché tant que l'e-mail n'est pas le vrai
     $("#mailBtn").href = `mailto:${SITE.email}?subject=${encodeURIComponent(t("msg.subject") + " " + SITE.brand)}&body=${encodeURIComponent(msg)}`;
 
     const n = state.models.size + (locName ? 1 : 0) + (state.format ? 1 : 0) + (pack ? 1 : 0);
@@ -412,7 +412,7 @@ function startSite(savedData) {
     $("#tray").classList.toggle("show", n > 0);
   }
 
-  /* PIED DE PAGE : nom de la propriÃ©taire + rÃ©seaux sociaux (seulement ceux qui ont un lien https) */
+  /* PIED DE PAGE : nom de la propriétaire + réseaux sociaux (seulement ceux qui ont un lien https) */
   const ICONS = {
     instagram: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.4" cy="6.6" r="1.2" fill="currentColor"/></svg>',
     tiktok: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/><path d="M14 3c.4 2.6 2.2 4.4 5 4.7" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>',
@@ -430,7 +430,7 @@ function startSite(savedData) {
       .map((k) => `<a href="${esc(soc[k])}" target="_blank" rel="noopener" aria-label="${SOCIAL_NAMES[k]}" title="${SOCIAL_NAMES[k]}">${ICONS[k]}</a>`).join("");
   }
 
-  /* CONDITIONS GÃ‰NÃ‰RALES (fenÃªtre) */
+  /* CONDITIONS GÉNÉRALES (fenêtre) */
   function renderTerms() {
     const T = (typeof TERMS !== "undefined" && (TERMS[LANG] || TERMS.fr)) || null;
     if (!T) return;
@@ -449,7 +449,7 @@ function startSite(savedData) {
   /* LANGUE */
   function renderAll() {
     applyStaticI18n();
-    document.title = `${SITE.brand} â€” ${t("doc.title")}`;
+    document.title = `${SITE.brand} — ${t("doc.title")}`;
     buildRotator();
     renderCasting();
     renderLocs();
