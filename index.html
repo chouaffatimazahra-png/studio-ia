@@ -64,6 +64,11 @@
         <a href="#casting" class="btn" data-i18n="hero.cta1">Choisir un mannequin →</a>
         <a href="#packs" class="btn btn-ghost" data-i18n="hero.cta2">Voir les packs</a>
       </div>
+      <ul class="hero-trust reveal">
+        <li data-i18n="trust.h1">Garantie fidélité</li>
+        <li data-i18n="trust.h2">Aperçu gratuit avant de payer</li>
+        <li data-i18n="trust.h3">Mannequin exclusif possible</li>
+      </ul>
     </div>
     <div class="marquee" aria-hidden="true"><div class="marquee-track" id="marquee"></div></div>
   </section>
@@ -196,13 +201,57 @@
     </ol>
   </section>
 
+  <!-- NOS ENGAGEMENTS -->
+  <section class="section" id="engagements">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-i18n="eng.eyebrow">07 — Nos engagements</p>
+      <h2 data-i18n="eng.title">Pourquoi nous faire confiance</h2>
+      <p class="lead" data-i18n="eng.lead">Six promesses que vous ne trouverez pas ailleurs.</p>
+    </div>
+    <div class="engage">
+      <article class="e-card reveal">
+        <span class="e-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.6-3 8.3-7 10-4-1.7-7-5.4-7-10V6z"/><path d="M8.6 12.2l2.3 2.3 4.6-4.8"/></svg></span>
+        <h3 data-i18n="eng.g.t">Garantie fidélité</h3>
+        <p data-i18n="eng.g.d">Votre produit n'est pas identique (couleur, coupe, détails) ? On refait gratuitement.</p>
+      </article>
+      <article class="e-card reveal">
+        <span class="e-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/></svg></span>
+        <h3 data-i18n="eng.p.t">Aperçu avant de payer</h3>
+        <p data-i18n="eng.p.d">Vous recevez d'abord un aperçu gratuit. Vous validez, puis on produit tout le reste.</p>
+      </article>
+      <article class="e-card reveal">
+        <span class="e-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 17.5h17l1-10-5.5 4L12 5l-4 6.5-5.5-4z"/><path d="M4 20.5h16"/></svg></span>
+        <h3 data-i18n="eng.x.t">Votre égérie exclusive</h3>
+        <p data-i18n="eng.x.d">Réservez votre mannequin : aucune autre marque de votre catégorie ne l'aura pendant 6 ou 12 mois.</p>
+      </article>
+      <article class="e-card reveal">
+        <span class="e-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 7.5L12 3l8.5 4.5v9L12 21l-8.5-4.5z"/><path d="M3.5 7.5L12 12l8.5-4.5M12 12v9"/></svg></span>
+        <h3 data-i18n="eng.k.t">Kit prêt à poster</h3>
+        <p data-i18n="eng.k.d">Tous les formats : Reels et TikTok (9:16), Instagram (4:5 et 1:1), fond blanc pour la boutique. Les vidéos arrivent montées, avec 3 accroches à tester.</p>
+      </article>
+      <article class="e-card reveal">
+        <span class="e-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 9.5h17M8 3v4M16 3v4"/></svg></span>
+        <h3 data-i18n="eng.s.t">Abonnement & saisons</h3>
+        <p data-i18n="eng.s.d">Du contenu frais chaque mois, prêt trois semaines avant les temps forts.</p>
+        <p class="e-tags" data-i18n="eng.s.tags">Ramadan · Aïd · Mariages · Rentrée · Black Friday</p>
+      </article>
+      <article class="e-card e-card-cta reveal">
+        <span class="e-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.8z"/></svg></span>
+        <h3 data-i18n="eng.r.t">Vos résultats ici</h3>
+        <p data-i18n="eng.r.d">Les premières clientes qui acceptent de partager leur avant / après reçoivent 3 visuels offerts.</p>
+        <a class="btn btn-small" id="proofBtn" target="_blank" rel="noopener" data-i18n="eng.r.cta">Je participe →</a>
+      </article>
+    </div>
+  </section>
+
   <!-- PACKS -->
   <section class="section" id="packs">
     <div class="section-head reveal">
-      <p class="eyebrow" data-i18n="packs.eyebrow">07 — Packs</p>
+      <p class="eyebrow" data-i18n="packs.eyebrow">08 — Packs</p>
       <h2 data-i18n="packs.title">Du test à la campagne complète</h2>
     </div>
     <div class="packs" id="packsGrid"></div>
+    <p class="packs-note reveal" data-i18n-html="packs.note">Dans tous les packs : <b>garantie fidélité</b>, <b>aperçu gratuit</b> avant paiement, tous les formats (9:16, 4:5, 1:1, fond blanc) et droits commerciaux. <b>Égérie exclusive</b> en option.</p>
   </section>
 
   <!-- COMMANDE -->
@@ -212,6 +261,14 @@
         <p class="eyebrow" data-i18n="order.eyebrow">Votre sélection</p>
         <h2 data-i18n="order.title">Prêt·e à lancer votre campagne ?</h2>
         <ul class="summary" id="summary"></ul>
+        <div class="order-opts">
+          <label class="opt"><input type="checkbox" id="optExclu"> <span data-i18n="opt.exclu">Je veux mon mannequin en exclusivité</span></label>
+          <div class="opt-dur" id="optDur" hidden>
+            <label><input type="radio" name="exdur" value="6" checked> <span data-i18n="opt.6">6 mois</span></label>
+            <label><input type="radio" name="exdur" value="12"> <span data-i18n="opt.12">12 mois</span></label>
+          </div>
+          <p class="opt-note" data-i18n="opt.preview">Vous recevez d'abord un aperçu gratuit : vous ne payez que si vous validez.</p>
+        </div>
       </div>
       <div class="order-cta">
         <a class="btn btn-wa" id="waBtn" target="_blank" rel="noopener" data-i18n="order.wa">Commander sur WhatsApp</a>

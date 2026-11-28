@@ -8,7 +8,7 @@
 const SITE = {
   brand: "STUDIO·IA",
   whatsapp: "213667526459",            // 0667 52 64 59 (بالصيغة الدولية بلا +)
-  email: "contact@exemple.com",        // ← الإيميل تاعك
+  email: "magicseedsai@gmail.com",        // ← الإيميل تاعك
   // فيديو واحد "assets/hero.mp4" ولا بزاف بالترتيب ["a.mp4", "b.mp4"]  (16:9)
   heroVideo: ["assets/videos/hero-1-studio.mp4", "assets/videos/hero-2-mannequin.mp4"],
   heroVideoMobile: ["assets/videos/hero-mobile-1-studio.mp4", "assets/videos/hero-mobile-2-mannequin.mp4"], // 9:16 (téléphone)

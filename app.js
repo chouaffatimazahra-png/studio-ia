@@ -229,6 +229,7 @@ function startSite(savedData) {
         <p class="zoom-meta">${esc(t("cat." + m.cat))} · ${esc(m.size)}</p>
         <p class="zoom-hint">${t("casting.turn")}</p>
         <button type="button" class="btn ${sel ? "btn-ghost" : ""}" id="zoomPick">${sel ? t("casting.unpick") : t("casting.pick")}</button>
+        <p class="zoom-exclu">✦ ${t("casting.exclu")}</p>
       </div>`;
     z.hidden = false; document.documentElement.classList.add("terms-open");
     initSpins($("#zoomBody"));
@@ -461,10 +462,17 @@ function startSite(savedData) {
       [t("sum.format"), state.format ? t(FORMAT_KEY[state.format]) : "—"],
       [t("sum.pack"), pack ? pack.name : "—"],
     ];
+    // option « égérie exclusive » (6 ou 12 mois)
+    if ($("#optExclu").checked) {
+      const dur = (document.querySelector('input[name="exdur"]:checked') || {}).value;
+      rows.push([t("sum.exclu"), t(dur === "12" ? "opt.12" : "opt.6")]);
+    }
     $("#summary").innerHTML = rows.map(([k, v]) => `<li>${k} : <b>${esc(v)}</b></li>`).join("");
 
-    const msg = `${t("msg.hello", { b: SITE.brand })}\n${t("msg.want")}\n` + rows.map(([k, v]) => `• ${k} : ${v}`).join("\n");
+    const msg = `${t("msg.hello", { b: SITE.brand })}\n${t("msg.want")}\n` + rows.map(([k, v]) => `• ${k} : ${v}`).join("\n") + `\n\n${t("msg.preview")}`;
     $("#waBtn").href = `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(msg)}`;
+    // bouton « Je participe » (offre avant / après) → message WhatsApp déjà écrit
+    $("#proofBtn").href = `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(t("msg.proof", { b: SITE.brand }))}`;
     $("#mailBtn").hidden = !SITE.email || /exemple|example/.test(SITE.email); // caché tant que l'e-mail n'est pas le vrai
     $("#mailBtn").href = `mailto:${SITE.email}?subject=${encodeURIComponent(t("msg.subject") + " " + SITE.brand)}&body=${encodeURIComponent(msg)}`;
 
@@ -472,6 +480,8 @@ function startSite(savedData) {
     $("#trayText").textContent = `${n} ${n > 1 ? t("tray.many") : t("tray.one")}`;
     $("#tray").classList.toggle("show", n > 0);
   }
+  $("#optExclu").addEventListener("change", (e) => { $("#optDur").hidden = !e.target.checked; update(); });
+  document.querySelectorAll('input[name="exdur"]').forEach((r) => r.addEventListener("change", update));
 
   /* PIED DE PAGE : nom de la propriétaire + réseaux sociaux (seulement ceux qui ont un lien https) */
   const ICONS = {
